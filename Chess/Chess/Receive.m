@@ -7,16 +7,15 @@
 //
 
 #import "Receive.h"
-
+#import "Alert.h"
 @implementation Receive
 
 - (instancetype)init
 {
     self = [super init];
-    if (self) {
-        Alert *alert = [[Alert alloc]init];
-        alert.instance = self;
-    }
+    Alert *alert = [[Alert alloc]init];
+    alert.instance = self;
+    
     return self;
 }
 

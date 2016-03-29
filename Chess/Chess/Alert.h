@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Chesses.h"
 
 @protocol Protocol <NSObject>
 
@@ -15,9 +16,10 @@
 @end
 
 
-@interface Alert : NSObject
+@interface Alert : Chesses
 
-@property NSString *msg;
 @property id<Protocol> instance;
+@property NSString *msg;
+
 
 @end
