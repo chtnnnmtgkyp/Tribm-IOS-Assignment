@@ -10,7 +10,7 @@
 #import "Vua.h"
 #import "Tot.h"
 #import "Xe.h"
-#import "Alert.h"
+#import "Receive.h"
 @interface ViewController ()
 
 @end
@@ -38,10 +38,9 @@
     [tot move];
     [tot eat];
     
+    Receive *receive = [[Receive alloc]init];
     
-    Alert *alert = [[Alert alloc]init];
-    [alert positionX];
-}
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

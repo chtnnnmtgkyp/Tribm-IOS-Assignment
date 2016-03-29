@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9AFDE691CAA89670085C5F6 /* Receive.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AFDE681CAA89670085C5F6 /* Receive.m */; };
 		D9E57CDA1CA989F7000D091E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E57CD91CA989F7000D091E /* main.m */; };
 		D9E57CDD1CA989F7000D091E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E57CDC1CA989F7000D091E /* AppDelegate.m */; };
 		D9E57CE01CA989F7000D091E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E57CDF1CA989F7000D091E /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9AFDE671CAA89670085C5F6 /* Receive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receive.h; sourceTree = "<group>"; };
+		D9AFDE681CAA89670085C5F6 /* Receive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receive.m; sourceTree = "<group>"; };
 		D9E57CD51CA989F7000D091E /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E57CD91CA989F7000D091E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9E57CDB1CA989F7000D091E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 		D9E57CD71CA989F7000D091E /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				D9AFDE671CAA89670085C5F6 /* Receive.h */,
+				D9AFDE681CAA89670085C5F6 /* Receive.m */,
 				D9E57CFB1CA99252000D091E /* Alert.h */,
 				D9E57CFC1CA99252000D091E /* Alert.m */,
 				D9E57CF21CA98B13000D091E /* Chesses.h */,
@@ -182,6 +187,7 @@
 				D9E57CF41CA98B13000D091E /* Chesses.m in Sources */,
 				D9E57CDA1CA989F7000D091E /* main.m in Sources */,
 				D9E57CF11CA98AE7000D091E /* Tot.m in Sources */,
+				D9AFDE691CAA89670085C5F6 /* Receive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,7 @@
 				D9E57CEE1CA989F7000D091E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

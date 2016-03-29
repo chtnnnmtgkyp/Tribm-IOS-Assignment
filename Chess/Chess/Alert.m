@@ -9,10 +9,26 @@
 #import "Alert.h"
 
 @implementation Alert
--(void)positionX{
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(Batdcroi) userInfo:nil repeats:NO];
-}
--(void)Batdcroi{
-    NSLog(@"Bat dc roi");
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        int count = 0;
+        while(true)
+        {
+            count++;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5*count * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.msg = @"Bat duoc roi";
+                if(self.instance != nil)
+                {
+                    [self.instance Message:self.msg];
+                }
+            });
+            if(count > 1000)
+                break;
+        }
+    }
+    return self;
 }
 @end

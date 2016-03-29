@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol Protocol <NSObject>
+
+-(void) Message:(NSString *)msg;
+
+@end
+
+
 @interface Alert : NSObject
--(void)positionX;
+
+@property NSString *msg;
+@property id<Protocol> instance;
+
 @end
